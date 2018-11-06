@@ -1,0 +1,11 @@
+<h2>Add a Burger</h2>
+
+{{#each data}}
+<h1>{{this}}</h1>
+{{/each}}
+
+
+<form action="/burgers/create" method="POST">
+    <input type="text" class="form-control" name="burgerName">
+    <button class="btn btn-primary" id="createBurger" type="submit">Submit</button>
+</form>
